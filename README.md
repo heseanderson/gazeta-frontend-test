@@ -46,7 +46,11 @@ Paginação - http://jasonwatmore.com/post/2016/01/31/angularjs-pagination-examp
 
 ## Lista de matérias por rolagem do scroll:
 - [ ] Número de matérias carregado por interação sendo 4.
-- [ ] Total de interaç
+- [ ] Total de interações sendo 6.
+- [ ] Carregar mais resultados ao rolar para o final da página.
 
 ## Lista de matérias por paginação:
-- [x]
+- [ ] Número de matérias carregado por clique em página sendo 4.
+- [ ] Total de itens de página sendo 6.
+- [ ] Esconder resultado anterior ao clicar em uma novo item de página.
+- [ ] Sistema e mostrar botões de páginação por interação.
