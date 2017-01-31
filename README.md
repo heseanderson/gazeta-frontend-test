@@ -19,7 +19,7 @@ Paginação - http://jasonwatmore.com/post/2016/01/31/angularjs-pagination-examp
 
 
 ## Requisito: 👍
-- Usar Vue.JS para construir o sistema de lista de matérias.
+- Usar Vue.JS versão 1.x para construir o sistema de lista de matérias.
 - Utilizar ajax para acessar o json em http://hom.gazetaonline.com.br/api/search?query=noticias&sort=maisRecentes
 - Construir um template simples usando HTML5 e CSS3.
 - Fazer um fork desde repositório, a cada nova tarefa terminada enviar um commit e um pull request ao final do teste.
