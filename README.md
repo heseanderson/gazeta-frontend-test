@@ -23,7 +23,7 @@ Paginação - http://jasonwatmore.com/post/2016/01/31/angularjs-pagination-examp
 - Utilizar ajax para acessar o json em http://hom.gazetaonline.com.br/api/search?query=noticias&sort=maisRecentes
 - Construir um template simples usando HTML5 e CSS3.
 - Fazer um fork desde repositório, a cada nova tarefa terminada enviar um commit e um pull request ao final do teste.
-- Atualizar o arquivo README.md marcando com 'x' cada item do lista de matérias concluido.
+- Atualizar o arquivo README.md marcando com 'X' cada item do lista de matérias concluido.
 - A cada loading de notícias mostrar efeito loader.
 
 
@@ -53,4 +53,4 @@ Paginação - http://jasonwatmore.com/post/2016/01/31/angularjs-pagination-examp
 - [ ] Número de matérias carregado por clique em página sendo 4.
 - [ ] Total de itens de página sendo 6.
 - [ ] Esconder resultado anterior ao clicar em uma novo item de página.
-- [X] Sistema e mostrar botões de páginação por interação.
+- [ ] Sistema e mostrar botões de páginação por interação.
