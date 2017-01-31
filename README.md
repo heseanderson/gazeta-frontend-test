@@ -53,4 +53,4 @@ Paginação - http://jasonwatmore.com/post/2016/01/31/angularjs-pagination-examp
 - [ ] Número de matérias carregado por clique em página sendo 4.
 - [ ] Total de itens de página sendo 6.
 - [ ] Esconder resultado anterior ao clicar em uma novo item de página.
-- [ ] Sistema e mostrar botões de páginação por interação.
+- [X] Sistema e mostrar botões de páginação por interação.
