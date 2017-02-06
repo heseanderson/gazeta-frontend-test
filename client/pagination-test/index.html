@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- meta data -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <!-- titulo -->
+        <title>gazeta frontend - pagination test</title>
+        <!-- estilos  -->
+        <link rel="stylesheet/less" type="text/css" href="css/paginationtest.less">
+        <!-- javascript - Libs -->
+        <script type="text/javascript" src="js/less.min.js" ></script>
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+        <script type="text/javascript" src="js/vue.min.js" ></script>
+    </head>
+
+    <body>    
+
+        <nav class="fixed-nav-bar">
+            <!-- barra de navegação fixada -->
+            <div class="center"> <div class="center nav-title">GAZETA - PAGINAÇÃO</div></div>
+        </nav>
+
+        <!-- identificação do VueJS -->
+        <div id="app_gazeta">
+
+            <div id="news" class="center news-padding" v-class="active : selectedDate == this.date" v-bind:class="{ isloading: loading}" >   
+                
+                <!-- paginação do topo -->
+                <div class="center">
+                    <ul class="pagination"  v-for="page in pages">
+                        <li><a onclick='setPage({{page.id}})' v-bind:class="{ active: page.active, disabled: page.disable }">{{page.name}}</a></li>
+                    </ul>
+                </div>
+                
+                <!-- template do componente 'gazeta-news-component' -->
+                <template id="template-gazeta-news" class="center news">
+                    <article>
+                        <!-- url -->
+                        <a href="{{ new.url }}" class="clearfix floating">
+                            <figure>
+                                <!-- dominantthumbnail -->
+                                <img src="{{ new.pic }}" class="image-news" /> 
+                            </figure> 
+                            <!-- title -->
+                            <div class="title-news"><b>{{ new.title }}</b></div> 
+                            <!-- createtime e ConvertDate(createtime) -->
+                            <div class="date-news"><time datetime="{{ new.real_date }}"><em>{{ new.date }}</em></time></div> 
+                            <!-- description -->
+                            <div class="desc-news">{{ new.desc }}</div> 
+                        </a>
+
+                        <!-- separador -->
+                        <hr class="hr">
+                    </article>
+                </template>
+                <!-- fim do template 'gazeta-news-component' -->
+                    
+                <!-- usando o VueJS para repetir o componente 'gazeta-news-component', para mostrar todas as notícias -->
+                <gazeta-news-component class="center news" v-for="new in news" :new="new"></gazeta-news-component>
+
+                <!-- paginação de baixo -->
+                <div class="center">
+                    <ul class="pagination"  v-for="page in pages">
+                        <li><a onclick='setPage({{page.id}})' v-bind:class="{ active: page.active, disabled: page.disable }">{{page.name}}</a></li>
+                    </ul>
+                </div>
+                
+                <!-- loading das páginas -->
+                <div id="loading" class="loading"><div class="center" id="loading" v-if="loading"> <div class="center"><img  src="img/loading.gif"/></div></div></div>
+
+            </div>
+
+        </div>
+
+        <!-- javascript - da página -->
+        <script type="text/javascript" src="js/gazeta.min.js" ></script>
+    </body>
+
+</html>

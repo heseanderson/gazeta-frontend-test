@@ -37,20 +37,20 @@ Paginação - http://jasonwatmore.com/post/2016/01/31/angularjs-pagination-examp
 
 
 ## Lista de matérias template:
-- [ ] HTML e CSS para notícias com imagem, título, descrição e data.
-- [ ] Botão para carregar mais.
-- [ ] Efeito loader para carregar notícias.
-- [ ] Númeração para paginação.
-- [ ] Botão de anterior e próximo.
-- [ ] Botão de primeiro e último resultado.
+- [X] HTML e CSS para notícias com imagem, título, descrição e data.
+- [X] Botão para carregar mais.
+- [X] Efeito loader para carregar notícias.
+- [X] Númeração para paginação.
+- [X] Botão de anterior e próximo.
+- [X] Botão de primeiro e último resultado.
 
 ## Lista de matérias por rolagem do scroll:
-- [ ] Número de matérias carregado por interação sendo 4.
-- [ ] Total de interações sendo 6.
-- [ ] Carregar mais resultados ao rolar para o final da página.
+- [X] Número de matérias carregado por interação sendo 4.
+- [X] Total de interações sendo 6.
+- [X] Carregar mais resultados ao rolar para o final da página.
 
 ## Lista de matérias por paginação:
-- [ ] Número de matérias carregado por clique em página sendo 4.
-- [ ] Total de itens de página sendo 6.
-- [ ] Esconder resultado anterior ao clicar em uma novo item de página.
-- [ ] Sistema e mostrar botões de páginação por interação.
+- [X] Número de matérias carregado por clique em página sendo 4.
+- [X] Total de itens de página sendo 6.
+- [X] Esconder resultado anterior ao clicar em uma novo item de página.
+- [X] Sistema e mostrar botões de páginação por interação.

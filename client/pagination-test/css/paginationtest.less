@@ -1,0 +1,248 @@
+
+/* LESS INIT */
+
+@color : #4a88b1; /* GAZETA BACKGROUND COLOR */
+@color-desc-date : #94928d; /* cor da descrição e data das notícias  */
+
+.image-news-extra (@marginr : 20px, @marginl : 0px){ /* atributos da imagem da notícia */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow:hidden;
+    border-radius: 7px;
+    margin-right: @marginr;
+    margin-left: @marginl;
+}
+
+/* body */
+body {
+    font-family: sans-serif; /* adicionando uma fonte */
+}
+
+/* title page */
+.fixed-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    background-color: @color;
+}
+
+/* hr */
+hr {
+    border: 0;
+    width: 50%;
+    height: 10px;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+/* class center */
+.center {
+    margin: auto;
+    padding: 10px;
+}
+
+/* class floating e clear fix*/
+.floating > * {
+    float:left;
+    margin-right:5px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+/* definindo parâmetros para telas acima de 900px de largura */
+@media only screen and (min-width: 900px) {
+
+    .news { /* adicionando atributos para a classe 'news' */
+        width: 950px;
+        height: 250px;
+    }
+
+    .image-news{ /* adicionando atributos para a classe 'image-news' */
+        height: 220px;
+        width: 220px;                            
+        position: relative;                            
+        .image-news-extra;
+    }
+
+    .title-news{ /* adicionando atributos para a classe 'title-news' */
+        font-size: 1.4em;
+        max-width: 650px;
+        padding-top: 35px;
+        padding-bottom: 25px;
+    }
+
+    .desc-news{ /* adicionando atributos para a classe 'desc-news' */
+        max-width: 650px;
+        font-size: 1.2em;
+        color:@color-desc-date;
+    }
+
+    .date-news{ /* adicionando atributos para a classe 'date-news' */
+        float: right;
+        padding-bottom: 25px;
+        color:@color-desc-date;
+    }
+    
+    /* alinhando a img de loading */
+    .loading{
+        text-align: center;
+        left: 50%;
+        background: @color;
+    }
+}
+
+/* definindo parâmetros para telas entre de 623px e 900px largura */
+@media only screen and (min-width: 623px) and (max-width: 900px) {
+
+    .news { /* adicionando atributos para a classe 'news' */
+        width: 950px;
+        height: 300px;
+    }
+
+    .image-news{ /* adicionando atributos para a classe 'image-news' */
+        height: 180px;
+        width: 180px;                          
+        position: relative;                            
+        .image-news-extra;
+    }
+
+    .title-news{ /* adicionando atributos para a classe 'title-news' */
+        font-size: 1.4em;
+        max-width: 320px;
+        padding-top: 35px;
+        padding-bottom: 25px;
+    }
+
+    .desc-news{ /* adicionando atributos para a classe 'desc-news' */
+        max-width: 400px;
+        font-size: 1.2em;
+        color:@color-desc-date;
+    }
+
+    .date-news{ /* adicionando atributos para a classe 'date-news' */
+        float: right;
+        padding-bottom: 25px;
+        color:@color-desc-date;
+        display: none;
+    }
+    
+    /* alinhando a img de loading */
+    .loading{
+        text-align: center;
+        left: 50%;
+        background: @color;
+    }
+}
+
+/* definindo parâmetros para telas abaixo de 623px de largura */
+@media only screen and (max-width: 623px) {
+
+    .news { /* adicionando atributos para a classe 'news' */
+        max-width: 300px;
+        height: 355px;
+        text-align: center;
+    }
+
+    .image-news{ /* adicionando atributos para a classe 'image-news' */
+        height: 125px;
+        width: 125px;                                 
+        .image-news-extra(0px, 25px);
+        margin-top: 30px;
+    }
+
+    .title-news{ /* adicionando atributos para a classe 'title-news' */
+        font-size: 1.1em;
+        max-width: 420px;
+        padding-top: 35px;
+        padding-bottom: 25px;
+    }
+
+    .desc-news{ /* adicionando atributos para a classe 'desc-news' */
+        max-width: 420px;
+        font-size: 1em;
+        color:@color-desc-date;
+    }
+
+    .date-news{ /* adicionando atributos para a classe 'date-news' */
+        padding-bottom: 25px;
+        color:@color-desc-date;
+        display: none;
+    }
+
+    /* alinhando a img de loading */
+    .loading{
+        text-align: center;
+        left: 40%;
+        background: @color;
+    }
+}
+
+/* retirando a propriedade cor, da tag 'a' */
+a { color: inherit; } 
+
+/* adicionando padding para a classe 'news' */
+.news-padding{
+    padding-top: 49px;
+    height: 100%;
+}
+
+/* cor e alinhamento para o texto para o titulo da barra superior */
+.nav-title{
+    text-align: center;
+    color:#fff;
+}
+
+
+/* paginação */
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+ul.pagination li a.active {
+    background-color: @color;
+    color: white;
+    border: 1px solid @color;
+    cursor: not-allowed !important;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;cursor:pointer;}
+
+/* efeito de desabilitado */
+.disabled{
+    background: #d2d2d2;
+    cursor: not-allowed !important;
+}
+
+/* fim paginação */
+
+/* alinhando o texto no centro */
+div.center {text-align: center;}
+
+
+
+
+

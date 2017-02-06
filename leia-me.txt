@@ -1,0 +1,5 @@
+> É necessário ter uma versão do "nodejs" instalado em sua máquina (link : https://nodejs.org/en/download/)
+> Caso a pasta 'node_modules' não esteja presente utilize o 'install modules.bat' para instalar o módulo.
+> Use o 'start server.bat' para iniciar o servidor.
+> A pasta 'client' contem todos os arquivos que o usuário tem acesso, documentos de estilo, documentos contendo os códigos utilizados e mais.
+> Entre nas seguintes urls 'http://localhost:8080/scroll-test/' e 'http://localhost:8080/pagination-test/' para prosseguir com os testes.
